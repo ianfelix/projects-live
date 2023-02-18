@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  background: #fffdfa;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 32px
+}
+
+nav li a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%)
+}
+
+.content-hero {
+  display: flex;
+  margin-top: 48px;
+  gap: 20px
+}
+
+section.content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section.content-main .hero {
+  max-width: 100%;
+}
+
+section.content-main .text-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-top: 20px;
+}
+section.content-main .text-container h1 {
+  font-size: 38px;
+  max-width: 254px;
+}
+
+section.content-main .text-action {
+max-width: 400px;
+font-size: 15px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+section.content-main .text-action {
+  color: hsl(236, 13%, 42%);
+  font-size: 16px;
+}
+
+
+section.content-main .text-action button {
+  background: hsl(5, 85%, 63%);
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 4px;
+  margin-top: 2.5rem;
+} 
+
+ article {
+  background: hsl(240, 100%, 5%);
+  color: white;
+  max-width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+article h1 {
+  color: hsl(35, 77%, 62%);
+  font-size: 32px;
+}
+
+article h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+article p {
+  font-size: 14px;
+  color: hsl(236, 13%, 42%);
+}
+
+article hr {
+  border: 1px solid hsl(236, 13%, 42%)
+}
+
+section.content-images {
+  display: flex;
+  margin-top: 48px;
+  max-height: 140px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section.content-images div {
+  display: flex;
+  gap: 12px;
+  max-width: 348px;
+}
+
+section.content-images .content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.content-images .content-text span{
+  font-size: 32px;
+  color: hsl(233, 8%, 79%);
+  font-weight: bold;
+}
+
+section.content-images .content-text p {
+  color: hsl(236, 13%, 42%)
+}
