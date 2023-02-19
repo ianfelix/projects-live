@@ -28,6 +28,14 @@ header {
   align-items: center;
 }
 
+header .menu {
+  display: none
+}
+
+header .menu-open-icon {
+  display: none;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -151,3 +159,85 @@ section.content-images .content-text span{
 section.content-images .content-text p {
   color: hsl(236, 13%, 42%)
 }
+
+
+@media only screen and (max-width: 600px) {
+
+  header .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fffdfa;
+    height: 100%;
+    max-width: 300px;
+    width: 100%;
+    z-index: 100;
+    padding: 40px 16px;
+    flex-direction: column;
+    gap: 32px;
+    /* animation when display is flex */
+    animation: slideIn 0.5s ease-in-out;
+  }
+
+  header .menu-open-icon {
+    all: unset;
+    display: block;
+    cursor: pointer;
+  }
+
+  header .menu-close-icon {
+    all: unset;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+  }
+
+  header .menu ul {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+  }
+
+  header .menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: hsl(236, 13%, 42%)
+  }
+
+  nav {
+    display: none;
+  }
+
+  .content-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.content-main .text-container h1 {
+    font-size: 38px;
+    max-width: 312px;
+}
+
+  .content-main .text-container {
+    flex-direction: column;
+  }
+
+  section.content-main .text-action {
+    max-width: 100%;
+  }
+
+  article {
+    max-width: 100%;
+  }
+
+  section.content-images {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  section.content-images img{
+    max-width: 100px;
+  }
+} 
